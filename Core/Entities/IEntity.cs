@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities.Abstract
+namespace Core.Entities
 {
     //IEntity implement eden class bir veritabani tablosudur
     // ClassName:IEntity gorsek anliyiriqki bu bir veritabani tablosudur bunu isaretleme deyilir
