@@ -40,8 +40,13 @@ namespace WebAPI
             //AOP
             //Autofac,Ninject,CastleWindsor,StructerMap,LightInject ,DryInject-->IoC Container
             //AOP
-            services.AddSingleton<IProductService,ProductManager>();
-            services.AddSingleton<IProductDal,EfProductDal>();
+            //Postsharp ucretli 
+
+            //Configurasyonu duzgun elemek ucun bunlari daha backend yazmaq lazimdir
+            //Cunki yeni bir API elave oluna biler ve yaxud bambasqa bir service mimarisi elave elesek
+            //configurasyonumuz APIde qalir
+            //services.AddSingleton<IProductService,ProductManager>();
+            //services.AddSingleton<IProductDal,EfProductDal>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebAPI", Version = "v1" });
